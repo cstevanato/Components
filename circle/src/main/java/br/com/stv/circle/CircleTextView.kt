@@ -21,6 +21,7 @@ class CircleTextView(context: Context?, attrs: AttributeSet?) : TextView(context
         this.text = configStyleBoldText()
         this.gravity = Gravity.CENTER
 
+
         configBackgroundColor(attributes)
 
     }
