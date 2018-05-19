@@ -6,15 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <br.com.stv.circle.CircleTextView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:text="H"
 
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <Spinner
+        android:id="@+id/sp_test"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Executar Teste"
+        app:layout_constraintTop_toBottomOf="@+id/sp_test"
+        tools:layout_editor_absoluteX="2dp" />
 </android.support.constraint.ConstraintLayout>
