@@ -12,7 +12,9 @@ import android.text.style.StyleSpan
 import android.view.Gravity
 
 
-class CircleTextView(context: Context?, attrs: AttributeSet?) : TextView(context, attrs) {
+class CircleTextView(context: Context?,
+                     attrs: AttributeSet?) :
+        TextView(context, attrs) {
 
     init {
         val attributes = context!!.obtainStyledAttributes(attrs, R.styleable.CircleTextView)
