@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             val intent = when (sp_test.selectedItem) {
                 "CircleTextView" -> Intent(this, TestCircleTextViewActivity::class.java)
+                "EditTextNumber" -> Intent(this, TestTestNumberActivity::class.java)
                 else -> null
             }
 

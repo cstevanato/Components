@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="EditTextNumber">
+        <attr name="countDigit" format="integer"/>
+        <attr name="countPrecision" format="integer"/>
+    </declare-styleable>
+</resources>
