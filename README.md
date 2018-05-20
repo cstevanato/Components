@@ -13,6 +13,12 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.cstevanato:Components:1.0.1'
+	        implementation 'com.github.cstevanato:Components:1.0.2'
 	}
 
+Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.cstevanato.Components:circle:1.0.2'
+	        implementation 'com.github.cstevanato.Components:edittext:1.0.2'
+	}
