@@ -34,8 +34,8 @@ class EditTextNumber :
                 InputType.TYPE_NUMBER_FLAG_DECIMAL or
                 InputType.TYPE_NUMBER_FLAG_SIGNED
         this.setSingleLine()
-        this.text.replace(0, this.text.length, value, 0, value.length)
-        this.setSelection(this.text.length)
+        //this.text.replace(0, this.text.length, value, 0, value.length)
+        //this.setSelection(this.text.length)
 
         this.addTextChangedListener(object : TextWatcher {
 
