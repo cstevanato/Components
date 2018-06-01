@@ -18,7 +18,7 @@ class CircleTextView(context: Context?,
 
     init {
         val attributes = context!!.obtainStyledAttributes(attrs, R.styleable.CircleTextView)
-        this.background = context!!.getDrawable(R.drawable.cicle_text_view)
+        this.background = context.getDrawable(R.drawable.cicle_text_view)
 
         this.text = configStyleBoldText()
         this.gravity = Gravity.CENTER

@@ -50,7 +50,7 @@ class EditTextNumber :
                 ignore = true
                 value = editValue(value, countPrecision, countDigits)
                 old = value
-                s?.replace(0, s.length, value, 0, value.length)
+                setText(value) // ?.replace(0, s.length, value, 0, value.length)
                 setSelection(value.length)
             }
 
@@ -64,7 +64,7 @@ class EditTextNumber :
         var ret = value.replace("[^\\d]".toRegex(), "")
 
         if (ret.isEmpty() || ret.toFloat().equals(0f)) {
-            ret = if (countPrecision > 0) "0.00" else "0"
+            ret = if (countPrecision > 0) "0,00" else "0"
         } else if (ret.length > countDigits) {
             ret =  formatValue(countPrecision, ret.substring(0, ret.length -1))
         } else if (countPrecision > 0) {
